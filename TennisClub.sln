@@ -4,6 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisClubWeb", "TennisClubWeb\TennisClubWeb.csproj", "{D162FE39-734F-46F8-B4E0-5955BE65CA41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421} = {48BBD3B7-6B61-4463-A080-595FAD0BB421}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisClubModel", "TennisClubModel\TennisClubModel.csproj", "{48BBD3B7-6B61-4463-A080-595FAD0BB421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisClubWebTest", "TennisClubWebTest\TennisClubWebTest.csproj", "{F1B171A2-3ABA-4D22-BC7B-D5583A6DCB72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_DBLayer", "EF_DBLayer\EF_DBLayer.csproj", "{63011922-0EC2-4F1D-8727-4716F023F232}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421} = {48BBD3B7-6B61-4463-A080-595FAD0BB421}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_DBLayerTest", "EF_DBLayerTest\EF_DBLayerTest.csproj", "{B8E751B1-903D-45F9-87F3-E3E504184913}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63011922-0EC2-4F1D-8727-4716F023F232} = {63011922-0EC2-4F1D-8727-4716F023F232}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +32,22 @@ Global
 		{D162FE39-734F-46F8-B4E0-5955BE65CA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D162FE39-734F-46F8-B4E0-5955BE65CA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D162FE39-734F-46F8-B4E0-5955BE65CA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BBD3B7-6B61-4463-A080-595FAD0BB421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B171A2-3ABA-4D22-BC7B-D5583A6DCB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B171A2-3ABA-4D22-BC7B-D5583A6DCB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B171A2-3ABA-4D22-BC7B-D5583A6DCB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B171A2-3ABA-4D22-BC7B-D5583A6DCB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63011922-0EC2-4F1D-8727-4716F023F232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63011922-0EC2-4F1D-8727-4716F023F232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63011922-0EC2-4F1D-8727-4716F023F232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63011922-0EC2-4F1D-8727-4716F023F232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E751B1-903D-45F9-87F3-E3E504184913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E751B1-903D-45F9-87F3-E3E504184913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E751B1-903D-45F9-87F3-E3E504184913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E751B1-903D-45F9-87F3-E3E504184913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
